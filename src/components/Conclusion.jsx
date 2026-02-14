@@ -71,7 +71,7 @@ const Conclusion = ({ unlocked }) => {
                         </div>
                     </div>
 
-                    <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight">
+                    <h2 className="text-5xl md:text-8xl font-cursive font-bold mb-6 text-white tracking-tight drop-shadow-lg">
                         Meri Humsafar Banogi?
                     </h2>
 

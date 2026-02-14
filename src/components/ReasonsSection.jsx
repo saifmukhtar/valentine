@@ -4,17 +4,20 @@ import { Sparkles, Music, Coffee } from 'lucide-react'
 
 const reasons = [
     {
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80", // Beautiful Smile
+        color: "bg-gradient-to-br from-yellow-300 via-orange-400 to-red-400",
+        iconcolor: "text-yellow-100",
         title: "Tumhari Muskurahat",
         description: "Jab tum hasti ho, waqt tham sa jata hai. It's not just a smile, it's my whole world."
     },
     {
-        image: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80", // Music/Voice aspect
+        color: "bg-gradient-to-bl from-purple-400 via-indigo-500 to-blue-600",
+        iconcolor: "text-purple-100",
         title: "Tumhari Awaz",
         description: "Tumhari awaz sukoon hai dil ka. I could listen to you forever."
     },
     {
-        image: "https://images.unsplash.com/photo-1531844251246-9a1bfaaeeb9a?auto=format&fit=crop&q=80", // Memories/Photos
+        color: "bg-gradient-to-tr from-pink-400 via-rose-500 to-red-600",
+        iconcolor: "text-rose-100",
         title: "Hamari Yaadein",
         description: "Har lamha tumhare saath ek kahani hai. Every memory is a treasure I keep safe."
     }
@@ -28,7 +31,7 @@ const ReasonsSection = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-7xl font-cursive mb-16 text-center text-white drop-shadow-lg"
+                    className="text-5xl md:text-7xl font-cursive mb-16 text-center text-white drop-shadow-lg"
                 >
                     Why You're <span className="text-modern-primary">Special</span>
                 </motion.h2>
@@ -41,22 +44,21 @@ const ReasonsSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
-                            className="group relative h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-white/10"
+                            className="group relative h-[450px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 backdrop-blur-sm"
                         >
-                            {/* Background Image */}
-                            <div className="absolute inset-0">
-                                <img
-                                    src={reason.image}
-                                    alt={reason.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                            {/* Abstract Art Background */}
+                            <div className={`absolute inset-0 ${reason.color} opacity-80 transition-transform duration-700 group-hover:scale-110`}>
+                                {/* Abstract Shapes */}
+                                <div className="absolute top-[-20%] right-[-20%] w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                                <div className="absolute bottom-[-10%] left-[-10%] w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
                             </div>
 
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
                             {/* Content */}
-                            <div className="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                <h3 className="text-3xl font-cursive font-bold mb-3 text-white drop-shadow-md">{reason.title}</h3>
-                                <p className="text-gray-200 leading-relaxed font-sans opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                            <div className="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                <h3 className={`text-4xl font-cursive font-bold mb-4 text-white drop-shadow-md`}>{reason.title}</h3>
+                                <p className="text-gray-100 leading-relaxed font-sans text-lg opacity-90">
                                     {reason.description}
                                 </p>
                             </div>

@@ -42,7 +42,7 @@ const InteractiveLove = () => {
                     <div className="mb-4 p-3 bg-pink-500/20 rounded-full text-pink-400">
                         <Flower size={32} />
                     </div>
-                    <h3 className="text-xl font-bold mb-4">Phoolon Ki Barsaat</h3>
+                    <h3 className="text-3xl font-cursive font-bold mb-4 text-white drop-shadow-md">Phoolon Ki Barsaat</h3>
 
                     <button
                         onClick={addFlower}
@@ -79,7 +79,7 @@ const InteractiveLove = () => {
                     <div className="mb-4 p-3 bg-purple-500/20 rounded-full text-purple-400">
                         <Mail size={32} />
                     </div>
-                    <h3 className="text-xl font-bold mb-2">Ek Paigaam</h3>
+                    <h3 className="text-3xl font-cursive font-bold mb-2 text-white drop-shadow-md">Ek Paigaam</h3>
                     <p className="text-gray-400 text-sm text-center mb-8">Tap to open.</p>
 
                     <AnimatePresence>
@@ -105,7 +105,7 @@ const InteractiveLove = () => {
                                 >
                                     <X size={24} />
                                 </button>
-                                <p className="font-handwriting text-2xl font-bold text-modern-primary mb-4">Meri Jaan,</p>
+                                <p className="font-cursive text-4xl font-bold text-modern-primary mb-4">Meri Jaan,</p>
                                 <p className="italic text-gray-600 mb-6">
                                     "Tum meri wo dua ho,<br />
                                     Jo har mangi hui dua qabool karti hai."
@@ -130,7 +130,7 @@ const InteractiveLove = () => {
                         <div className="mb-4 p-3 bg-red-500/20 rounded-full text-red-500">
                             <Heart size={32} />
                         </div>
-                        <h3 className="text-xl font-bold mb-2">Heartbeat Sync</h3>
+                        <h3 className="text-3xl font-cursive font-bold mb-2 text-white drop-shadow-md">Dil Ki Dhadkan</h3>
                         <p className="text-gray-400 text-sm text-center mb-8">Touch to feel it.</p>
 
                         <button
