@@ -4,17 +4,17 @@ import { Sparkles, Music, Coffee } from 'lucide-react'
 
 const reasons = [
     {
-        image: "https://images.unsplash.com/photo-1517457210348-18e385f025e1?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80", // Beautiful Smile
         title: "Tumhari Muskurahat",
         description: "Jab tum hasti ho, waqt tham sa jata hai. It's not just a smile, it's my whole world."
     },
     {
-        image: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&q=80", // Music/Voice aspect
         title: "Tumhari Awaz",
         description: "Tumhari awaz sukoon hai dil ka. I could listen to you forever."
     },
     {
-        image: "https://images.unsplash.com/photo-1621252179027-94459d27d3ee?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1531844251246-9a1bfaaeeb9a?auto=format&fit=crop&q=80", // Memories/Photos
         title: "Hamari Yaadein",
         description: "Har lamha tumhare saath ek kahani hai. Every memory is a treasure I keep safe."
     }
