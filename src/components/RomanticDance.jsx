@@ -109,7 +109,7 @@ const RomanticDance = () => {
             { s: 3, ms: tick(2000) }, // Waltz 1
             { s: 4, ms: tick(2000) }, // Waltz 2
             { s: 5, ms: tick(2000) }, // Waltz 3
-            { s: 6, ms: tick(2000) }, // Twirl
+            { s: 6, ms: tick(2000) }, // Close Embrace
             { s: 7, ms: tick(3000) }, // Dip
             { s: 8, ms: tick(3000) }, // Sway
             { s: 9, ms: tick(4000) }  // Break & Back up
@@ -164,9 +164,10 @@ const RomanticDance = () => {
             mPose = { ...p.frame, bodyX: -20 + offset, ...(step % 2 === 0 ? p.step1 : p.step2) }
             wPose = { ...p.frameFollow, bodyX: 20 + offset, ...(step % 2 === 0 ? p.step2 : p.step1) }
         }
-        else if (step === 6) { // Twirl
-            mPose = { ...p.frame, bodyX: -25 }
-            wPose = { ...p.stand, bodyX: 35, bodyRot: 360, transition: { duration: 1 } } // simplified spin
+        else if (step === 6) { // Close Embrace (Replaces Twirl)
+            // Closer than frame, heads together-ish
+            mPose = { ...p.frame, bodyX: -15, bodyRot: 5, lArm: [100, 100], rArm: [-100, 100], lLeg: [5, 0], rLeg: [-5, 0] } // gentle hug
+            wPose = { ...p.frameFollow, bodyX: 15, bodyRot: -5, lArm: [100, 100], rArm: [-100, 100], lLeg: [5, 0], rLeg: [-5, 0] }
         }
         else if (step === 7) { // Dip
             mPose = { ...p.frame, ...p.dipLead, bodyX: -15 }
