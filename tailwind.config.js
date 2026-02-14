@@ -16,8 +16,9 @@ export default {
                 }
             },
             fontFamily: {
-                sans: ['Inter', 'system-ui', 'sans-serif'],
-                display: ['Outfit', 'sans-serif'],
+                sans: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+                display: ['Great Vibes', 'cursive'],
+                cursive: ['Great Vibes', 'cursive'],
             }
         },
     },
