@@ -11,7 +11,6 @@ const Hero = () => {
     }
 
     return (
-    return (
         <div className="h-screen flex flex-col items-center justify-center text-center relative z-10 px-4 overflow-hidden">
             {/* Romantic Background Overlay causing 'dark mode' feel */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-modern-primary/10 to-modern-dark z-0"></div>

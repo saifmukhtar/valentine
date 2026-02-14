@@ -8,6 +8,8 @@ import LoveTimeline from './components/LoveTimeline'
 import InteractiveLove from './components/InteractiveLove'
 import RomanticDance from './components/RomanticDance'
 
+import BackgroundMusic from './components/BackgroundMusic'
+
 function App() {
     const [unlocked, setUnlocked] = useState(false)
 
@@ -20,6 +22,7 @@ function App() {
 
     return (
         <div className="relative min-h-screen bg-modern-dark text-white font-sans overflow-x-hidden selection:bg-modern-primary selection:text-white">
+            <BackgroundMusic />
             <FluidBackground />
 
             <div className="relative z-10 container mx-auto px-4">

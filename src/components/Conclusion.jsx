@@ -74,16 +74,29 @@ const Conclusion = ({ unlocked }) => {
                         <span className="text-modern-primary font-medium">Let's make it official.</span>
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    const [noBtnPosition, setNoBtnPosition] = React.useState({x: 0, y: 0 })
+    
+    const runAway = () => {
+        const x = Math.random() * 200 - 100
+                    const y = Math.random() * 200 - 100
+                    setNoBtnPosition({x, y})
+    }
+
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center relative">
                         <button
-                            className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-modern-primary to-modern-secondary text-white font-bold rounded-full text-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,128,0.5)] transition-all"
+                            className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-modern-primary to-modern-secondary text-white font-bold rounded-full text-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,128,0.5)] transition-all z-20"
                             onClick={() => confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } })}
                         >
                             Qabool Hai! 💖
                         </button>
-                        <button className="w-full sm:w-auto px-12 py-5 bg-white/5 text-white font-medium rounded-full hover:bg-white/10 transition-colors">
+                        <motion.button
+                            animate={{ x: noBtnPosition.x, y: noBtnPosition.y }}
+                            onHoverStart={runAway}
+                            onTouchStart={runAway} // For mobile
+                            className="w-full sm:w-auto px-12 py-5 bg-white/5 text-white font-medium rounded-full hover:bg-white/10 transition-colors z-10"
+                        >
                             Sochna Padega...
-                        </button>
+                        </motion.button>
                     </div>
                 </div>
             </motion.div>
