@@ -64,11 +64,12 @@ const Conclusion = ({ unlocked }) => {
                     </div>
 
                     <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight">
-                        Be My Valentine?
+                        Meri Humsafar Banogi?
                     </h2>
 
                     <p className="text-xl text-gray-300/90 mb-10 leading-relaxed font-light">
-                        You won the game, but I'm the one who feels like a winner every day I'm with you.
+                        "Zindagi ke har safar mein, mujhe bas tumhara saath chahiye.<br />
+                        Haa kaho, aur meri duniya mukammal kar do."
                         <br />
                         <span className="text-modern-primary font-medium">Let's make it official.</span>
                     </p>
@@ -78,10 +79,10 @@ const Conclusion = ({ unlocked }) => {
                             className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-modern-primary to-modern-secondary text-white font-bold rounded-full text-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,128,0.5)] transition-all"
                             onClick={() => confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } })}
                         >
-                            YES, I WILL! 💖
+                            Qabool Hai! 💖
                         </button>
                         <button className="w-full sm:w-auto px-12 py-5 bg-white/5 text-white font-medium rounded-full hover:bg-white/10 transition-colors">
-                            Tell me more...
+                            Sochna Padega...
                         </button>
                     </div>
                 </div>

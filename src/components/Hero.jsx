@@ -26,9 +26,9 @@ const Hero = () => {
                 </div>
 
                 <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-4 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                    US.<br />
+                    Hum.<br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-modern-primary to-modern-secondary">
-                        FOREVER.
+                        Hamesha.
                     </span>
                 </h1>
             </motion.div>
@@ -39,8 +39,9 @@ const Hero = () => {
                 transition={{ delay: 0.5, duration: 0.8 }}
                 className="mt-8"
             >
-                <p className="text-xl md:text-2xl text-gray-300/80 mb-10 max-w-lg mx-auto font-light leading-relaxed">
-                    There's a question I need to ask you. But first, you have to prove you're ready.
+                <p className="text-xl md:text-2xl text-gray-300/80 mb-10 max-w-lg mx-auto font-light leading-relaxed italic">
+                    "Tere ishq mein gum hona chahta hoon,<br />
+                    Bas ab tera hi hona chahta hoon."
                 </p>
 
                 <button

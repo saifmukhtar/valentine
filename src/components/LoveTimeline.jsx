@@ -3,21 +3,21 @@ import { motion } from 'framer-motion'
 
 const memories = [
     {
-        date: "The First Day",
+        date: "Pehli Mulaqat",
         title: "The Beginning",
-        text: "It wasn't just a meeting. It was the moment everything changed. The moment I saw you, I knew my life would never be the same.",
+        text: "Us din na sirf hum mile, balki meri zindagi mil gayi. It was the moment everything changed.",
         glitchIntensity: "high" // kept for visual style only
     },
     {
-        date: "The Middle",
+        date: "Izhaar-e-Mohabbat",
         title: "Falling Deep",
-        text: "Late nights, confused feelings, running in circles. But even in the chaos, you were the only thing that made sense.",
+        text: "Dil ne kaha, bas tum hi ho. Even in the chaos, you were the only thing that made sense.",
         glitchIntensity: "medium"
     },
     {
-        date: "Right Now",
+        date: "Aaj Aur Hamesha",
         title: "The Clarity",
-        text: "It hit me suddenly. You aren't just a part of my life. You are my whole life.",
+        text: "Ab har pal tumhare naam. You aren't just a part of my life. You are my whole life.",
         glitchIntensity: "low"
     }
 ]
@@ -33,7 +33,7 @@ const LoveTimeline = () => {
                 >
                     <h2 className="text-4xl md:text-6xl font-bold mb-4 tracking-tighter">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-modern-primary to-modern-secondary">
-                            OUR HISTORY
+                            HAMARI DASTAAN
                         </span>
                     </h2>
                     <p className="text-gray-400 font-mono text-sm">Every moment matters.</p>

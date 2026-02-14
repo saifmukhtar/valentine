@@ -5,7 +5,7 @@ import { Heart, Trophy, RefreshCw, ArrowUp, ArrowDown, ArrowLeft, ArrowRight } f
 // Game Constants
 const GRID_SIZE = 20
 const CELL_SIZE = 20
-const WIN_SCORE = 10
+const WIN_SCORE = 2
 // Start with a longer snake so it "emerges" visibly
 const INITIAL_SNAKE = [
     { x: 10, y: 10 },

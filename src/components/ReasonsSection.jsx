@@ -5,18 +5,18 @@ import { Sparkles, Music, Coffee } from 'lucide-react'
 const reasons = [
     {
         icon: <Sparkles size={32} />,
-        title: "Your Energy",
-        description: "You light up every room you walk into. It's not science, it's just pure magic."
+        title: "Tumhari Muskurahat",
+        description: "Jab tum hasti ho, waqt tham sa jata hai. It's not just a smile, it's my whole world."
     },
     {
         icon: <Music size={32} />,
-        title: "Your Vibe",
-        description: "The way you laugh is my favorite playlist. I could listen to it on repeat forever."
+        title: "Tumhari Awaz",
+        description: "Tumhari awaz sukoon hai dil ka. I could listen to you forever."
     },
     {
         icon: <Coffee size={32} />,
-        title: "Our Moments",
-        description: "From late night talks to coffee runs, every second with you feels like a movie scene."
+        title: "Hamari Yaadein",
+        description: "Har lamha tumhare saath ek kahani hai. Every memory is a treasure I keep safe."
     }
 ]
 

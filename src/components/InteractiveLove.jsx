@@ -42,15 +42,16 @@ const InteractiveLove = () => {
                     <div className="mb-4 p-3 bg-pink-500/20 rounded-full text-pink-400">
                         <Flower size={32} />
                     </div>
-                    <h3 className="text-xl font-bold mb-2">Build a Bouquet</h3>
-                    <p className="text-gray-400 text-sm text-center mb-8">Click to add flowers for me.</p>
+                    <h3 className="text-xl font-bold mb-4">Phoolon Ki Barsaat</h3>
 
                     <button
                         onClick={addFlower}
-                        className="px-6 py-2 bg-pink-500 hover:bg-pink-600 rounded-full text-white font-bold transition-all active:scale-95 mb-8 z-20"
+                        className="px-6 py-2 bg-pink-500 hover:bg-pink-600 rounded-full text-white font-bold transition-all active:scale-95 mb-4 z-20"
                     >
                         Add a Flower 🌸
                     </button>
+
+                    <p className="text-gray-400 text-sm text-center mb-8">Click button above to add flowers.</p>
 
                     <div className="relative w-full flex-grow flex items-end justify-center">
                         <div className="w-16 h-24 border-2 border-white/30 border-t-0 rounded-b-xl relative bg-white/5 backdrop-blur-sm z-10"></div>
@@ -78,7 +79,7 @@ const InteractiveLove = () => {
                     <div className="mb-4 p-3 bg-purple-500/20 rounded-full text-purple-400">
                         <Mail size={32} />
                     </div>
-                    <h3 className="text-xl font-bold mb-2">A Secret Note</h3>
+                    <h3 className="text-xl font-bold mb-2">Ek Paigaam</h3>
                     <p className="text-gray-400 text-sm text-center mb-8">Tap to open.</p>
 
                     <AnimatePresence>
@@ -104,9 +105,10 @@ const InteractiveLove = () => {
                                 >
                                     <X size={24} />
                                 </button>
-                                <p className="font-handwriting text-2xl font-bold text-modern-primary mb-4">My Dearest,</p>
+                                <p className="font-handwriting text-2xl font-bold text-modern-primary mb-4">Meri Jaan,</p>
                                 <p className="italic text-gray-600 mb-6">
-                                    "If I had a flower for every time I thought of you... I could walk through my garden forever."
+                                    "Tum meri wo dua ho,<br />
+                                    Jo har mangi hui dua qabool karti hai."
                                 </p>
                                 <Heart className="text-red-500 fill-red-500 animate-pulse" />
                             </motion.div>
