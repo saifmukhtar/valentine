@@ -34,6 +34,14 @@ const Conclusion = ({ unlocked }) => {
         }
     }, [unlocked])
 
+    const [noBtnPosition, setNoBtnPosition] = React.useState({ x: 0, y: 0 })
+
+    const runAway = () => {
+        const x = Math.random() * 200 - 100
+        const y = Math.random() * 200 - 100
+        setNoBtnPosition({ x, y })
+    }
+
     if (!unlocked) {
         return (
             <section id="conclusion-section" className="min-h-[50vh] flex items-center justify-center relative z-10 opacity-50 grayscale transition-all duration-1000">
@@ -73,14 +81,6 @@ const Conclusion = ({ unlocked }) => {
                         <br />
                         <span className="text-modern-primary font-medium">Let's make it official.</span>
                     </p>
-
-                    const [noBtnPosition, setNoBtnPosition] = React.useState({x: 0, y: 0 })
-    
-    const runAway = () => {
-        const x = Math.random() * 200 - 100
-                    const y = Math.random() * 200 - 100
-                    setNoBtnPosition({x, y})
-    }
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center relative">
                         <button
